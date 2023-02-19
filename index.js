@@ -1,4 +1,6 @@
 const inquirer = require('inquirer')
+const fs = require('fs');
+const markdown = require('./generateMarkdown');
 
 // Inquirer questions
 const questions = [
@@ -19,7 +21,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'usage information',
+        name: 'usage',
         message: 'Project usage information?',
     },
     {
@@ -36,7 +38,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'Which license do you want to add?',
-        choices: ['MIT','ISC','GNUPLv3'],
+        choices: ['MIT','ISC','GNU GPL v3','None'],
         filter(val) {
             return val.toLowerCase();
         }
@@ -53,3 +55,21 @@ const questions = [
     },
     
 ]
+
+//run query function
+async function runQuery() {
+    return inquirer.prompt(questions)
+    .then((answers) => {
+        const mark = markdown(answers)
+        fs.writeFile('README.md', mark, function(err) {
+            if(err) {
+                console.log('Could not save file')
+            }
+        })
+    })
+    .catch((error) => {
+        console.log(error)
+    })
+}
+
+runQuery()
