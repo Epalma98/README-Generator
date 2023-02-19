@@ -61,7 +61,7 @@ async function runQuery() {
     return inquirer.prompt(questions)
     .then((answers) => {
         const mark = markdown(answers)
-        fs.writeFile('README.md', mark, function(err) {
+        fs.writeFile('TestREADME.md', mark, function(err) {
             if(err) {
                 console.log('Could not save file')
             }
