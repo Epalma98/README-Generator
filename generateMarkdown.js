@@ -12,12 +12,23 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  const licenseLinks
+  const licenseLinks = {
+    mit: '[MIT](https://choosealicense.com/licenses/mit/)',
+    isc: '[ISC](https://choosealicense.com/licenses/isc/)',
+    gnugplv3: '[GNUGPLv3](https://choosealicense.com/licenses/gpl-3.0/)'
+  }
+  return licenseLinks[license]
 }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  if(license){
+    return `Licensed under the ${this.renderLicenseLink(license)} license`
+  } else {
+    return ''
+  }
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(answers) {
@@ -51,7 +62,7 @@ ${answers.contribution}
 ${answers.test}
 
 ## License
-${answers.license}
+${this.renderLicenseSection(answers.license)}
 
 ## Questions
 ${answers.github}
