@@ -1,3 +1,55 @@
 const inquirer = require('inquirer')
 
-console.log('readme gen running')
+// Inquirer questions
+const questions = [
+    {
+        type: 'input',
+        name: 'title',
+        message: 'What is your project title?',
+    },
+    {
+        type: 'input',
+        name: 'description',
+        message: 'Project description?',
+    },
+    {
+        type: 'input',
+        name: 'installation',
+        message: 'What are the installation instructions?',
+    },
+    {
+        type: 'input',
+        name: 'usage information',
+        message: 'Project usage information?',
+    },
+    {
+        type: 'input',
+        name: 'contribution',
+        message: 'What are the contribution guidelines?',
+    },
+    {
+        type: 'input',
+        name: 'test',
+        message: 'What are the testing instructions?',
+    },
+    {
+        type: 'list',
+        name: 'license',
+        message: 'Which license do you want to add?',
+        choices: ['MIT','ISC','GNUPLv3'],
+        filter(val) {
+            return val.toLowerCase();
+        }
+    },
+    {
+        type: 'input',
+        name: 'github',
+        message: 'What is your GitHub?',
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'What is your email',
+    },
+    
+]
