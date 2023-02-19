@@ -1,3 +1,4 @@
+
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
@@ -24,7 +25,7 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if(license){
-    return `Licensed under the ${this.renderLicenseLink(license)} license`
+    return `Licensed under the ${renderLicenseLink(license)} license`
   } else {
     return ''
   }
@@ -35,7 +36,7 @@ function generateMarkdown(answers) {
   return `
 # ${answers.title}
 
-${this.renderLicenseBadge(answers.license)}
+${renderLicenseBadge(answers.license)}
 
 ## Table of Content
 - [Description](#description)
@@ -62,11 +63,12 @@ ${answers.contribution}
 ${answers.test}
 
 ## License
-${this.renderLicenseSection(answers.license)}
+${renderLicenseSection(answers.license)}
 
 ## Questions
-${answers.github}
-${answers.email}
+How to get in contact with me:
+* Github: https://github.com/${answers.github}
+* Email: ${answers.email}
 `;
 }
 

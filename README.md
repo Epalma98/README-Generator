@@ -1,5 +1,7 @@
 
-# dfsfdsds
+# sdc
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Table of Content
 - [Description](#description)
@@ -11,23 +13,24 @@
 - [Questions](#questions)
 
 ## Description
-asasasa
+dc
 
 ## Installation
-asass
+cd
 
 ## Usage
-asddas
+cd
 
 ## Contribution
-dasda
+dc
 
 ## Test
-sdada
+cd
 
 ## License
-mit
+Licensed under the [MIT](https://choosealicense.com/licenses/mit/) license
 
 ## Questions
-sdasda
-dasdaa
+How to get in contact with me:
+* Github: https://github.com/epalma98
+* Email: elijahapalma@gmail.com
