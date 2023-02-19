@@ -38,7 +38,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'Which license do you want to add?',
-        choices: ['MIT','ISC','GNU GPL v3','None'],
+        choices: ['MIT','ISC','WTFPL','None'],
         filter(val) {
             return val.toLowerCase();
         }
