@@ -1,36 +1,29 @@
-
-# Project Title
-
-[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)
+# README Generator
 
 ## Table of Content
 - [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contribution](#contribution)
-- [Test](#test)
-- [License](#license)
+- [Screenshots](#screenshots)
 - [Questions](#questions)
 
 ## Description
-this is the description
+Using the integrated terminal, this program will create a markdown file with user inputs.
 
 ## Installation
-how to install...
+To install, clone the repo from Github along with the necessary files to run node in your terminal.
 
 ## Usage
-this is how you use it ...
+Load up the repo on preferred code editor, then open the integrated terminal by right clicking on the index.js file. Type in Node index.js and you'll be presented with a series of questions. Answer them one by one and when finished, the program will generate a README file with all of the user inputs.
 
-## Contribution
-these are the guidelines...
+## Screenshots
 
-## Test
-how to test...
-
-## License
-Licensed under the [WTFPL](https://choosealicense.com/licenses/wtfpl/) license
+![Screenshot](/images/run_node.png) "Run Node in the terminal"
+![Screenshot](/images/user_inputs.png) "User inputs"
+![Screenshot](/images/choices.png) "User choice selection"
+![Screenshot](/images/generated_file.png) "Generated markdown file"
 
 ## Questions
 How to get in contact with me:
 * Github: https://github.com/epalma98
-* Email: eli@gmail.com
+* Github Repo: https://github.com/Epalma98/README-Generator 

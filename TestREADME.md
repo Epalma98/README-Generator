@@ -1,7 +1,7 @@
 
-# cds
+# Project Title
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)
 
 ## Table of Content
 - [Description](#description)
@@ -13,24 +13,24 @@
 - [Questions](#questions)
 
 ## Description
-dc
+This is the description
 
 ## Installation
-dc
+Here are the instructions...
 
 ## Usage
-cd
+This is How you use this...
 
 ## Contribution
-dc
+Guidelines...
 
 ## Test
-cd
+test...
 
 ## License
-Licensed under the [MIT](https://choosealicense.com/licenses/mit/) license
+Licensed under the [WTFPL](https://choosealicense.com/licenses/wtfpl/) license
 
 ## Questions
 How to get in contact with me:
-* Github: https://github.com/dc
-* Email: cds
+* Github: https://github.com/epalma98
+* Email: eli@gmail.com
